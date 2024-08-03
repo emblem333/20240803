@@ -1,12 +1,11 @@
-// script.js
 document.addEventListener("DOMContentLoaded", () => {
   const modalButtons = document.querySelectorAll('.product button');
-  const modals = document.querySelectorAll('.modal');
+  // const modals = document.querySelectorAll('.modal');
   const closeButtons = document.querySelectorAll('.close');
 
   modalButtons.forEach(button => {
       button.addEventListener('click', (event) => {
-          const modalId = event.target.closest('.products').dataset.modal;
+          const modalId = event.target.closest('.product').dataset.modal;
           document.getElementById(modalId).style.display = "block";
       });
   });

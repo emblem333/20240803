@@ -8,17 +8,16 @@
 </head>
 <body>
   <header>
-    <div class="container">
       <h1>マイポートフォリオ</h1>
-    <nav>
-      <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Products">Projects</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  </header>
+        <nav>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Products">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
         <section id="about" class="about">
             <h2>Abou</h2>
@@ -31,20 +30,20 @@
 
         <section id="products">
             <h2>Products</h2>
-            <div class="products" data-modal="modal">
+            <div class="product" data-modal="modal1">
                 <h3>作品その1</h3>
                 <img src="./picture/150.png" alt="">
-                <a href="#">詳細を見る</a>
+                <button>詳細を見る</button>
             </div>
-            <div class="products" data-modal="modal">
+            <div class="product" data-modal="modal2">
                 <h3>作品その2</h3>
                 <img src="./picture/150.png" alt="">
-                <a href="#">詳細を見る</a>
+                <button>詳細を見る</button>
             </div>
-            <div class="products" data-modal="modal">
+            <div class="product" data-modal="modal3">
               <h3>作品その３</h3>
               <img src="./picture/150.png" alt="">
-              <a href="#">詳細を見る</a>
+              <button>詳細を見る</button>
           </div>
         </section>
 
@@ -61,27 +60,42 @@
             </form>
         </section>
     </div>
+
     <div id="modal1" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
           <h3>作品その1</h3>
-          <p>作品その1の詳細な説明。</p>
       </div>
   </div>
   <div id="modal2" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
           <h3>作品その2</h3>
-          <p>作品その2の詳細な説明。</p>
       </div>
   </div>
   <div id="modal3" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
           <h3>作品その3</h3>
-          <p>作品その3の詳細な説明。</p>
       </div>
   </div>
     <script src="script.js"></script>
+
+    <!-- <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+      </div>
+      <div class="modal-header">
+        <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="イメージ画像">
+        <p id="modal-text"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-button">詳しくはこちら</button>
+      </div>
+    </div> -->
+
 </body>
 </html>
