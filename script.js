@@ -78,6 +78,7 @@ function drawGoal() {
     );
 }
 
+//ギミック
 function clearPlayer() {
     ctx.fillStyle = 'white';
     ctx.fillRect(
