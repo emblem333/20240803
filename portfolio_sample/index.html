@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+
+  <header class="header-nav">
       <h1>マイポートフォリオ</h1>
-        <nav>
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Products">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Produts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
 
     <div class="container">
-        <section id="about" class="about">
-            <h2>Abou</h2>
+        <section id="about" tabindex="-1" class="about">
+            <h1>About</h1>
             <img class="sample" src="./picture/150.png" alt="">
             <p>フロントエンドの山田太郎です。モダンなデザインと
               直感的なUI/UXを追求しReactやVue.jsを駆使したウェブアプリケーションの開発
@@ -28,7 +29,7 @@
             </p>
         </section>
 
-        <section id="products">
+        <section id="products" class="products" tabindex="-1">
             <h2>Products</h2>
             <div class="product" data-modal="modal1">
                 <h3>作品その1</h3>
@@ -47,9 +48,9 @@
           </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact" tabindex="-1">
             <h2>Contact</h2>
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post" novalidate>
                 <label for="name">名前:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">メールアドレス:</label>
@@ -57,6 +58,8 @@
                 <label for="message">メッセージ:</label>
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">送信</button>
+                <p class="error-message" id="error-message" style="color: red; display: none;">
+                  未入力の項目があります。</p>
             </form>
         </section>
     </div>

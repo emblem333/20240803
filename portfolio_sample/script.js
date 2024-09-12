@@ -22,3 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 });
+
+    // フォームバリデーション
+    const form = document.getElementById('contactForm');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', function(event) {
+      // フォームフィールドを取得
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // フィールドが未入力の場合
+      if (name === '' || email === '' || message === '') {
+        event.preventDefault();  // フォーム送信をキャンセル
+        errorMessage.style.display = 'block';  // エラーメッセージ表示
+      } else {
+        errorMessage.style.display = 'none';  // エラーメッセージ非表示
+      }
+    });
