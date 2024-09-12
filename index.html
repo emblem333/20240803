@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header-nav">
+      <h1>マイポートフォリオ</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Produts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+    <div class="container">
+        <section id="about" tabindex="-1" class="about">
+            <h1>About</h1>
+            <img class="sample" src="./picture/150.png" alt="">
+            <p>フロントエンドの山田太郎です。モダンなデザインと
+              直感的なUI/UXを追求しReactやVue.jsを駆使したウェブアプリケーションの開発
+              を得意としています。詳細はプロジェクトページをご覧ください。
+            </p>
+        </section>
+
+        <section id="products" class="products" tabindex="-1">
+            <h2>Products</h2>
+            <div class="product" data-modal="modal1">
+                <h3>作品その1</h3>
+                <img src="./picture/150.png" alt="">
+                <button>詳細を見る</button>
+            </div>
+            <div class="product" data-modal="modal2">
+                <h3>作品その2</h3>
+                <img src="./picture/150.png" alt="">
+                <button>詳細を見る</button>
+            </div>
+            <div class="product" data-modal="modal3">
+              <h3>作品その３</h3>
+              <img src="./picture/150.png" alt="">
+              <button>詳細を見る</button>
+          </div>
+        </section>
+
+        <section id="contact" class="contact" tabindex="-1">
+            <h2>Contact</h2>
+            <form id="contactForm" action="#" method="post" novalidate>
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">送信</button>
+                <p class="error-message" id="error-message" style="color: red; display: none;">
+                  未入力の項目があります。</p>
+            </form>
+        </section>
+    </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>作品その1</h3>
+      </div>
+  </div>
+  <div id="modal2" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>作品その2</h3>
+      </div>
+  </div>
+  <div id="modal3" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>作品その3</h3>
+      </div>
+  </div>
+    <script src="script.js"></script>
+
+    <!-- <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+      </div>
+      <div class="modal-header">
+        <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="イメージ画像">
+        <p id="modal-text"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-button">詳しくはこちら</button>
+      </div>
+    </div> -->
+
+</body>
+</html>
